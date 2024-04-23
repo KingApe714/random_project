@@ -7,12 +7,30 @@
     <style>
       .body {
       }
+
+      .test_button {
+        background-color: aquamarine;
+        border: red;
+        border-radius: 5px;
+      }
+
+      .test_button:hover {
+        background-color: blue;
+      }
+
+      .test_button:active {
+        background-color: chartreuse;
+      }
     </style>
   </head>
   <body class="body">
     TESTING
 
-    <button>This is a button</button>
+    <button onclick="myFunc()" class="test_button">This is a button</button>
   </body>
-  <script></script>
+  <script>
+    function myFunc() {
+      window.location.href = "https://www.google.com/";
+    }
+  </script>
 </html>
